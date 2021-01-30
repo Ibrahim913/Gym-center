@@ -1,0 +1,596 @@
+/*global style*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+}
+
+
+/* Start Navbar style*/
+
+.navbar {
+    background-color: #00001a;
+    opacity: 1;
+    height: 10vh;
+}
+
+.navbar a {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand {
+    color: #0077dd;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #0077dd;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #0077dd;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #FFF;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #0077dd !important;
+}
+
+.navbar-nav {
+    text-align: center;
+    margin-left: 50px;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #0077dd;
+}
+
+
+/*navbar search style*/
+
+.search-box {
+    position: absolute;
+    top: 50%;
+    left: 71.5%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #FFF;
+    font-size: 16px;
+    transition: .4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.search-btn {
+    color: #000000;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #156ce6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.search-box:hover>.search-txt {
+    width: 90px;
+    padding: 0;
+    padding-left: 5px;
+}
+
+.search-box:hover>.search-btn {
+    background: #FFF;
+}
+
+.search::placeholder {
+    color: #FFF;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0077dd;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #F4F4F4;
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* End Navbar Style*/
+
+.about {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+/*================================*/
+
+
+/*Start style image overlay*/
+
+.images img {
+    width: 100%;
+    height: 100%;
+}
+
+.ftco-about .thumb:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    border: 4px solid #0077dd;
+    opacity: 0;
+}
+
+.view {
+    position: relative;
+    width: 50%;
+}
+
+.view .image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.view .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.view:hover .overlay {
+    width: 100%;
+    left: 0;
+}
+
+.view .text {
+    color: #0077dd;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+
+/*================================*/
+
+
+/*End style image overlay*/
+
+
+/*Style info*/
+
+.about .info {
+    flex: 50%;
+    max-width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about .info h5 {
+    color: #0077dd;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.about .info h1 {
+    margin: 15px 0;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+.about .info h1 span {
+    display: block;
+    color: #0077dd;
+}
+
+.about .info p {
+    margin-top: 15px;
+    line-height: 2.1;
+    color: rgb(155, 150, 150);
+}
+
+.about .info a {
+    padding: 10px 30px;
+    margin-top: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #FFF;
+    background: #0077dd;
+    border: 1px solid #0077dd;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.about .info a:hover {
+    color: #0077dd;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #0077dd;
+}
+
+
+/*This style for section      ==[ why to choise us ]==   */
+
+.choseus-section .section-title h2 {
+    color: #0077dd;
+    margin-bottom: 46px;
+    font-weight: 600;
+}
+
+.choseus-section .section-title h2:before {
+    width: 110px;
+    height: 3px;
+    right: 0;
+    left: 0;
+    top: 49px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.choseus-section .section-title p {
+    color: #F4F4F4;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0 15px 0;
+}
+
+.choseus-section .chose-items .ci-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.choseus-section .chose-items .ci-item h5 {
+    font-size: 19px;
+    color: #FFF;
+}
+
+.choseus-section .chose-items .ci-item p {
+    color: #aaa;
+}
+
+.choseus-section .chose-items .ci-item i {
+    font-size: 48px;
+    color: #0077dd;
+    margin-bottom: 30px;
+}
+
+
+/*Style for table in page about*/
+
+.class-timetable {
+    margin: 80px;
+}
+
+.trainer-schedule {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/as2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.class-timetable .section-title h2 {
+    color: #0077dd;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.class-timetable .nav-controls ul {
+    text-align: center;
+}
+
+.class-timetable .nav-controls ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.class-timetable .nav-controls ul li {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 60px;
+    margin: 34px 4px;
+    background: #fff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #0077dd;
+}
+
+.class-timetable .nav-controls ul li.minitup-control-active {
+    background: #000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.spad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.trainer-schedule .section-title,
+.choseus-section .section-title,
+.about-page-trainer .section-title {
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 45px;
+}
+
+.trainer-schedule .section-title h2:before,
+.choseus-section .section-title h2:before,
+.about-page-trainer .section-title h2:before {
+    width: 70px;
+    height: 3px;
+    right: 0;
+    left: 0;
+    top: 49px;
+    margin: 0 auto;
+}
+
+.section-title h2:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 29px;
+    background: #0077dd;
+    content: "";
+}
+
+.schedule-table {
+    overflow-x: auto;
+}
+
+.schedule-table table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+}
+
+.schedule-table table thead tr {
+    background-color: #0077dd;
+    border: 1px solid #f4f4f4;
+}
+
+.schedule-table table thead tr th {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    border: 1px solid #f4f4f4;
+    text-transform: uppercase;
+    padding: 25px 0;
+}
+
+.schedule-table table tbody {
+    border-top: 1px solid #e5e5e5;
+}
+
+.schedule-table table tbody tr {
+    border-bottom: 1px solid #e5e5e5;
+    background: #F0F0F0;
+}
+
+.schedule-table table tbody tr .workout-time {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.schedule-table table tbody tr td {
+    border-right: 1px solid #e5e5e5;
+    padding: 20px 10px 16px;
+    width: 146px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+
+.schedule-table .ts-item {
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.schedule-table table tbody tr td.gym h6,
+.schedule-table table tbody tr td.yoga h6 {
+    color: rgb(5, 204, 5);
+}
+
+.schedule-table table tbody tr td.crossfit h6,
+.schedule-table table tbody tr td.running h6 {
+    color: #0077dd;
+}
+
+.schedule-table table tbody tr td.box h6,
+.schedule-table table tbody tr td.body h6,
+.schedule-table table tbody tr td.cardio h6 {
+    color: #06b8e0;
+}
+
+.schedule-table table tbody tr td h6 {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.schedule-table table tbody tr td span {
+    font-size: 14px;
+    display: block;
+    color: #191919;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.schedule-table table tbody tr td .trainer-name {
+    font-size: 14px;
+    color: #6e6e6e;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+
+/*Footer*/
+
+.page-footer {
+    color: #ccc;
+    margin-top: 0;
+}
+
+.page-footer a i {
+    font-size: 30px;
+    margin: 10px;
+}
+
+
+/* Start Responsive css*/
+
+@media only screen and (max-width: 991px) {
+    .navbar-nav {
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: #FFF;
+    }
+}
+
+@media(max-width:766px) {
+    .carousel-caption h5 {
+        font-size: 20px;
+    }
+    .carousel-caption p {
+        font-size: 12px;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-nav.ml-auto {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: #FFF;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-caption h5 {
+        font-size: 20px;
+    }
+    .carousel-caption p {
+        font-size: 12px;
+        display: none;
+    }
+    .testimonial6 .testi6 .nav-link {
+        margin: 0px 0px -2px 0;
+        padding: 10px;
+    }
+    .testimonial6 .testi6 {
+        -webkit-box-orient: horizontal !important;
+        -webkit-box-direction: normal !important;
+        -webkit-flex-direction: row !important;
+        -ms-flex-direction: row !important;
+        flex-direction: row !important;
+        border-right: 0px solid rgba(120, 130, 140, 0.13);
+        border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+        margin-bottom: 40px;
+    }
+    .testimonial6 .testi6 .nav-link img {
+        width: 40px;
+    }
+    .testimonial6 .testi6 .nav-link.active {
+        border-right: 0px solid #0077dd;
+        border-bottom: 3px solid #0077dd;
+    }
+}
+
+
+/* End Responsive css*/

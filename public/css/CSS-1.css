@@ -1,0 +1,234 @@
+body {
+    background: #1d1919 !important;
+}
+
+
+/*.carousel-indicators li{
+
+    margin-top:40px;
+    border-radius:50px;
+    background:red;
+    width:10px;
+    height:10px;
+    list-style-type: square;
+}*/
+
+.carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50px !important;
+    border: none
+}
+
+.trainers .carousel-indicators {
+    position: relative;
+    margin-top: 25% !important
+}
+
+.trainers {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-color: #121212;
+    color: #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.trainers .box {
+    width: 200px;
+    height: 100px;
+    background: red;
+    position: relative;
+    transition: ease all 0.3s;
+}
+
+.trainers .box:hover {
+    border: 5px solid #FFF;
+}
+
+.trainers .box:hover .inner_text {
+    bottom: 30px
+}
+
+.trainers .inner_text {
+    transition: ease all 0.3s;
+    position: absolute;
+    bottom: -30px;
+    color: #FFF;
+    width: 100px;
+    height: 30px;
+}
+
+.trainers div.calculat form .form-group input {
+    width: 270px;
+    height: 60px;
+    margin-top: 30px;
+    padding: 12px;
+    font: 20px tahoma;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+
+div.calculat form .form-group button {
+    padding: 10px;
+    width: 270px;
+    background-color: #fd5f00;
+    color: #fff;
+    font: 20px arial;
+    border-radius: 30px;
+    border: 2px solid #fd5f00;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 40px;
+    transition: ease all 0.3s;
+}
+
+div.calculat form .form-group button:hover {
+    color: #fd5f00;
+    background-color: #fff;
+}
+
+div.calculat form .form-group button.bmi {
+    padding: 10px;
+    width: 270px;
+    background-color: #fcd307;
+    color: #fff;
+    font: 20px arial;
+    border-radius: 30px;
+    border: 2px solid #fcd307;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 40px;
+    transition: ease all 0.3s;
+}
+
+div.calculat form .form-group button.bmi:hover {
+    color: #fcd307;
+    background-color: #fff;
+}
+
+span {
+    color: #fcd307;
+}
+
+h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+p {
+    /*display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+ Home Contact Style
+ 
+    .contcthome {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    .contcthome .container {
+        position: relative;
+        width: 1200px;
+        height: 300px;
+        margin: 240px auto;
+        background: #ccc;
+    }
+    .contcthome .container .box {
+        position: relative;
+        width: 270px;
+        height: 250px;
+        background: #007bff;
+        float: left;
+        margin: 15px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .contcthome .container .box .icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #aaa;
+        transition: .5s;
+        z-index: 1;
+    }
+    .contcthome .container .box:hover .icon {
+        top: 20px;
+        right: 8%;
+        width: 80px;
+        height: 80px;
+        transform: translate(50%, 50%);
+        border-radius: 50%;
+    }
+    .contcthome .container .box .icon .fa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 80px;
+        transition: .5s;
+        color: #0077dd;
+    }
+    .contcthome .container .box:hover .icon .fa {
+        font-size: 40px;
+    }
+    .contcthome .container .box .content {
+        position: absolute;
+        top: 100%;
+        height: -webkit-calc(100% - 100px);
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: .5s;
+        opacity: 0;
+    }
+    .contcthome .container .box:hover .content {
+        top: 100px;
+        opacity: 1;
+    }
+    .contcthome .container .box .content h3 {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+    }
+   
+    */
+    color: #666666;
+    font: 16px Roboto, Arial, sans-serif;
+    margin: 10px 30px 16px;
+}
